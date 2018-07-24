@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Taller Flisol 2018 - Análisis de Datos Python</title>
+
+		<meta name="description" content="Taller Flisol 2018 - Análisis de Datos Python">
+		<meta name="author" content="@reroes">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                            
+                                <section>
+					<h2>Manejo de Datos con Python - Jupyter y Pandas</h2>
+                                        <hr />
+                                        <small>
+                                            
+                                                <h3>René Elizalde</h3>
+                                                <h4>Tecnologías Avanzadas de la Web</h4>
+                                                <h5>Universidad Técnica Particular de Loja</h5>
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+
+                                <section>
+					<h2>Python - Lenguaje</h2>
+                                        <hr />
+                                        <small>
+                                            <h3>Instalación</h3>
+                                            <ul>
+                                                <li>Instalar dependencias: Python-setuptools | python-dev </li>
+                                                <li>Instalar Manejadores de paquetes de python: easy_install | pip install</li>
+                                                <li>Instalar el paquete de entornos virtuales | pip install virtualenv</li>
+                                            </ul>                                        
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+                                <section>
+					<h2>Python - Lenguaje</h2>
+                                        <hr />
+                                        <small>
+                                            <h3>Entornos Virtuales</h3>
+                                            <ul>
+                                                <li><i>source /ruta/de/entorno/nombre_del_entorno/bin/activate</i> </li>
+                                                <li>deactivate </li>
+                                            </ul>                                        
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+
+                                <section>
+					<h2>Análisis de Datos Python</h2>
+                                        <hr />
+                                        <small>
+                                            <h3>Librerías para análisis de datos </h3>
+                                            <ul>
+                                                <li>Numpy</li>
+                                                <li>Matplotlib</li>
+                                                <li>Pandas</li>
+                                                <li>Ipython - Jupyter</li>
+                                            </ul>                                        
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+                                <section>
+                                    <h2>Numpy</h2>
+                                    <hr />
+                                    <small>
+                                    <p>Numpy, abreviatura de Numerical Python , es el paquete fundamental para la computación científica en Python.</p> 
+                                    <ul>
+                                        <li>Herramientas para lectura y escritura</li>
+                                        <li>Operaciones de algrebra lineal</li>
+                                        <li>Conectar C | C++ | Fortran con Python</li>
+                                    </ul>
+                                    </small>
+                                    <hr />
+                                    <small>
+                                        <p>
+                                        <small>
+                                            <a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018
+                                        </small>
+                                        </p>
+                                    </small>
+                                </section>
+                                <section>
+					<h2>Matplotlib</h2>
+                                        <hr />
+                                        <small>
+                                            <p>Librería más popular en Python para visualizaciones y gráficos</p>
+                                            <ul>
+                                                <li>Fácil de aprender</li>
+                                                <li>Control sobre elementos de las figuras - tamaño | trazado de líneas</li>
+                                                <li>Exportar a PNG | PDF</li>
+                                                <li>Se integra con Ipython</li>
+                                            </ul>
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+                                <section>
+					<h2>Pandas</h2>
+                                        <hr />
+                                        <small>
+                                            <p>Pandas es una librería que proporciona estructuras de datos flexibles y permite trabajar con la información de forma eficiente</p>                                        
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+                                <section>
+					<h2>Ipython - Jupyter</h2>
+                                        <hr />
+                                        <small>
+                                            <p>Promueve un ambiente de trabajo de ejecutar-explorar en contraposición al tradicional modelo de desarrollo de software de editar-compilar-ejecutar</p>
+                                            <ul>
+                                                <li>Su poderoso shell interactivo.</li>
+                                                <li>Notebook, su inteface web con soporte para código, texto, expresiones matemáticas, gráficos en linea y multimedia</li>
+                                                <li>Integrado con matplotlib</li>
+                                                <li>Mucho más que una librería, es todo un ambiente de trabajo que nos facilita enormemente trabajar con  Python</li>
+                                            </ul>
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+                                <section>
+					<h2>Instalación de Paquetes</h2>
+                                        <hr />
+                                        <small>
+                                            <ul>
+                                                <li>pip install numpy</li>
+                                                <li>pip install pandas </li>
+                                                <li>pip install matplotlib</li>
+                                                <li>pip install ipython </li>
+                                                <li>pip install jupyter </li>
+                                            </ul>
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+                                <section>
+					<h2>Los comandos que vamos a utilizar</h2>
+                                        <hr />
+                                        <small>
+                                            <ul>
+                                                <li>source /ruta/entorno/nombre_del_entorno/bin/activate</li>
+                                                <li><i>jupyter notebook</i></li>                      
+                                                <li>deactivate</li>
+                                            </ul>
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+                                <section>
+					<h2>Pandas</h2>
+                                        <hr />
+                                        <small>
+                                            <h3>Estructuras de Pandas</h3>
+                                            <ul>
+                                                <li>Series (y TimeSeries)</li>
+                                                <li>DataFrame</li>
+                                                <li>Panel</li>
+                                            </ul>
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+                                <section>
+					<h2>Pandas</h2>
+                                        <hr />
+                                        <small>
+                                            <h3>Series</h3>
+                                            <p>En una instancia de la clase Series podremos almacenar arrays o vectores con índice o etiqueta</p>
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+                                <section>
+					<h2>Pandas</h2>
+                                        <hr />
+                                        <small>
+                                            <h3>DataFrame</h3>
+                                            <ul>
+                                                <li>Tabla con índices para las filas y las columnas</li>
+                                                <li>Similiar a hoja de cálculo</li>
+                                                <li>Tabla de Base de Datos</li>
+                                            </ul>
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+                                <section>
+					<h2>Otras Librerías</h2>
+                                        <hr />
+                                        <small>
+                                            <h3>Scipy</h3>
+                                            <p>Solucionar problemas de la computación científica y el análisis numérico</p>
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+                                <section>
+					<h2>Otras Librerías</h2>
+                                        <hr />
+                                        <small>
+                                            <h3>Scikit - learn</h3>
+                                            <p>Especializada en usar algoritmos para data mining y machine learning.</p>
+                                            <ul>
+                                                <li>Clasificaciones: Identificar las categorías a que cada observación del conjunto de datos pertenece.</li>
+                                                <li>Regresiones: Predecire el valor continuo para cada nuevo ejemplo.</li>
+                                                <li>Agrupaciones: Agrupación automática de objetos similares en un conjunto.</li>
+                                                <li>Reducción de dimensiones: Reducir el número de variables aleatorias a considerar.</li>
+                                                <li>Selección de Modelos: Comparar, validar y elegir parámetros y modelos.</li>
+                                                <li>Preprocesamiento: Extracción de caracteristicas a analizar y normalización de datos.</li>
+                                            </ul>
+                                        </small>
+                                        <hr />
+                                        <small>
+                                            <p>
+						<small><a href="http://twitter.com/reroes">@reroes</a> - Taller Flisol 2018</small>
+					    </p>
+                                        </small>
+
+				</section>
+
+
+
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
