@@ -17,8 +17,8 @@ app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 
 class ReusableForm(Form):
     primero = TextField('Name:', validators=[validators.required()])
- 
- 
+
+
 @app.route("/", methods=['GET', 'POST'])
 def registros():
     """
@@ -32,7 +32,7 @@ def registros():
         primero = request.form['primero']
         primero = primero.upper()
         print "%s" % (primero)
- 
+
         if form.validate():
             connection = sqlite3.connect("../notebooks/instituciones.db")
             connection.text_factory = str
@@ -44,7 +44,7 @@ def registros():
             print "%s ---- numero" % numero
         else:
             flash('Error')
- 
+
     return render_template('registros.html', form=form, data=data, tabla=tabla, numero=numero)
 
 
