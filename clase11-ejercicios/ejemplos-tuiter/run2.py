@@ -22,6 +22,7 @@ data = {
 for l in lista:
     archivo =codecs.open("%s.csv" % l, "w",encoding="utf-8")
     user_data = api.followers(l)
+    archivo.write(u"screen_name|followers_count|listed_count|friends_count|favourites_count|name|created_at \n")
     for i in user_data['users']:
         archivo.write(u"{}|{}|{}|{}|{}|{}|{} \n".format(i['screen_name'],i['followers_count'],i['listed_count'],i['friends_count'],i['favourites_count'],i['name'],i['created_at']))
     archivo.close()
