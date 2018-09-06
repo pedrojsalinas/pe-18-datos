@@ -12,7 +12,7 @@ app = Flask(__name__)
 """
 CouchDB permanent view
 """
-docs_by_author = ViewDefinition('docs', 'byauthor', 
+docs_by_author = ViewDefinition('docs', 'byauthor',
                                 'function(doc) { emit(doc.anio_mad, doc);}')
 
 """
@@ -29,8 +29,8 @@ def docs(author_id):
 	print row.value['anio_mad'].__class__, author_id.__class__
 	try:
 	    author_id = int(author_id)
-		
-	    if row.value['anio_mad'] == author_id:        
+
+	    if row.value['anio_mad'] == author_id:
 	        docs.append(row.value)
                 print row.value
 	except:
@@ -44,7 +44,7 @@ Flask main
 if __name__ == "__main__":
     app.config.update(
         DEBUG = True,
-        COUCHDB_SERVER = 'http://admin:11112222@localhost:5984/',
+        COUCHDB_SERVER = 'http://admin:pedro1988@localhost:5984/',
         COUCHDB_DATABASE = 'nacimientos'
     )
     manager = flaskext.couchdb.CouchDBManager()
